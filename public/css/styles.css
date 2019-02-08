@@ -1,0 +1,20 @@
+
+body{
+    padding: 20px;
+    margin:20px;
+}
+* {
+    box-sizing: border-box;
+    
+}
+#header {
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+    background-color: #ffffff;    
+}
+
+.form-field {margin:20px 0}
+.form-field>*{width:15%}
+.form-field label{display:block;margin-bottom:7px}
+.form-field input,.form-field select{border:1px solid #e1e1e1;padding:10px}

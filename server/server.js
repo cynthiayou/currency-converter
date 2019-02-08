@@ -25,6 +25,7 @@ const getCountries = async (currencyCode) => {
 
 const getExchangeRate = async (from, to, amount) => {
     try {
+        console.log(__dirname);
         const response = await axios.get('http://data.fixer.io/api/latest?access_key=08bf0107cac8f458a9ec847ae63f1574');
         const euro = 1 / response.data.rates[from];
         const rate = euro * response.data.rates[to];

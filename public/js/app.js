@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $('#my-form').on('submit', function(e){
         e.preventDefault();
-        let socket = io.connect('http://localhost:3000');
+        let socket = io();
         const fromAmount = $('#fromAmount').val();
         const fromCurrency = $('#fromCurrency').val();
         const toCurrency = $('#toCurrency').val();
